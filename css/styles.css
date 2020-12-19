@@ -1,0 +1,143 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+h1, p {
+    margin: 0;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+header {
+    height: 65px;
+    background-color: orange;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    opacity: 0.9;
+}
+.header-left {
+    float: left;
+    font-size: 24px;
+    padding: 15px 0;
+}
+.header-right {
+    float: right;
+    padding: 0 10px;
+    
+}
+.header-right a {
+    display: inline-block;
+    line-height: 65px;
+    text-decoration: none;
+    color: white;
+}
+.header-right:hover {
+    background-color: moccasin;
+}
+    
+.top {
+    background-image: url(../img/wrapper.jpg);
+    background-size: cover;
+    padding: 200px;
+    text-align: center;
+}
+.top h1 {
+    font-size: 48px;
+    color: white;
+}
+.top p {
+    color: white;
+}
+.menu-list {
+    background-color: mistyrose;
+}
+.menu-list ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+}
+.menu-list a {
+    line-height: 60px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 0 60px;
+}
+.menu-list li :hover {
+    background-color: seashell;
+}
+.circles {
+    margin: 120px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.circle {
+    border: 1px solid;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+}
+.contents-box {
+    display: flex;
+}
+.contents-box img, .contents-box p {
+    width: 50%;
+}
+.contents-box p {
+    background-color: whitesmoke;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contents-box:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.contact {
+    background-color: mistyrose;
+}
+
+form {
+    width: 50%;
+    /* margin: 10% auto; */
+}
+input, textarea {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    color: dimgray;
+    background-color: lightgray;
+    border: none;
+    
+}
+textarea {
+    height: 150px;
+}
+input[type='submit'] {
+    float: right;
+    width: auto;
+    color: white;
+    background-color: coral;
+    margin: 10px 0;
+}
+input[type='submit']:hover {
+    opacity: 0.8;
+}
+footer {
+    height: 65px;
+    background-color: orange;
+    clear: both;
+}
+footer p {
+    padding-top: 20px;
+    font-size: 12px;
+    text-align: right;
+    color: white;
+}
